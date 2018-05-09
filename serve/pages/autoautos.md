@@ -1,0 +1,19 @@
+# Selbstfahrende Autos
+
+> Joa, Felix, Niklas, Lasse
+
+!---!
+
+Immer mehr kommt die Frage nach autonomen Fahren, doch wie realistisch ist diese Vorstellung und ist das überhaupt moralisch Vertretbar. Dem Modul von Nvidia wurden Millionen von Bildern von Hindernissen gezeigt, also eingespeist. Anschließend wurde ihm durch Simulationen und in richtigen Fahrmanövern antrainiert, dass man davor abbremst. Es merkte sich die Eingabesignale und das gewünschte Ergebnis und war anschließend in der Lage, in ähnlichen Situationen selbstständig zu stoppen. Der Clou: Der Computer schafft diese Verknüpfungen von allein, ohne einen von Menschen geschaffenen Algorithmus.
+
+Autonomes Fahren ist in fünf Stufen aufgebaut, die erste Stufe des automatisierten Fahrens kommt weitestgehend ohne Automatisierung aus. Der Fahrer hat die volle Kontrolle über die Geschwindigkeit, das Gaspedal, die Bremsen und das Lenkrad. Allerdings kann das Auto durchaus einfache Sicherheitssysteme an Bord haben, die bei Gefahren eingreifen, zum Beispiel Abstandshalter. Level zwei wäre wenn die Technik in bestimmten Fällen die Längs- und die Querführung übernimmt. Etwa beim Einparken und beim Spurenhalten. Allerdings sind teilautomatisierte Autos darauf ausgelegt, jederzeit vom Fahrer persönlich überwacht zu werden. Der Fahrer muss zu jeder Zeit die Lenkung über das Auto übernehmen können. Bei der dritten Stufe kann der Fahrer sein Fahrzeug auch länger unbewacht fahren lassen. Die Technik erkennt, wann sie nicht mehr in der Lage ist, das Auto ohne den Fahrer zu steuern. Dann gibt der technische Assistent eine Warnung an den Fahrer und dieser muss dann die Kontrolle übernehmen. Beim vollautomatisierten Fahren, auch Stufe vier genannt ist das Auto, technisch so ausgereift, dass erfordert so gut wie kein Eingreifen vom Fahrer, allerdings nur in klar definierten Fahrsituationen, also auf bestimmten Straßen und in einem klar definierten Geschwindigkeitsbereich. In der Stufe fünf ist ein Fahrer überflüssig, denn der Computer beherrscht die Fahrt in allen Verkehrssituationen.
+
+!["Autosonar"](/images/autoautos/autosonar.jpeg)
+
+Die positiven Ansätze des autonomen Fahren sind, zwischen 1,2 und 1,3 Millionen Verkehrstote gibt es laut der Weltgesundheitsorganisation WTO auf dieser Welt und das Jährlich. Denn jeder kann eine Sekunde unaufmerksam sein und mit dem autonomen Fahren würde wahrscheinlich die Unfallrate erheblich sinken. Der Verkehr würde flüssiger laufen, da zum Beispiel das Reißverschluss-Verfahren richtig ausgeführt werden würde. Der Fahrer würde entlastet werden und seine Zeit hinter dem Steuer effektiver nutzen.
+
+Doch es sind auch negative Punkte vorhanden, die rechtliche Ebene, wer ist Schuld beim Unfall? Der Hersteller? Oder der Besitzer?, außerdem hat der Computer kein moralisches Gewissen (Trolley-Problem). Doch wenn nicht alle autonome Autos fahren, hat der Computer Schwierigkeiten, denn er ist nicht an unkontrollierte Bewegungen gewohnt die von menschlichen Fahren ausgeht.
+
+Mai 2017 entwickelte die Regierung einen gesetztes Entwurf welches das Autonome fahren vermehrt ermöglichen soll, wichtig bei diesen vorschlagen sind, im Notfall liegt die Verantwortung immer beim Menschen, mit Ausnahme das Auto hat eine Black Box an board welche beweisen kann das ein technisches versagen vorliegt, ist dies der fall so ist es möglich zu klären ob möglicherweise der Hersteller an dem versagen schuld ist.
+
+Wir denken es ist momentan und in absehbarer Zukunft nicht vertretbar, da die Technik zurzeit noch nicht genug ausgereift ist um moralische Entscheidungen treffen zu können. Abgesehen davon sind 60 Prozent der deutschen Bürger gegenüber der Autonomie skeptisch, daher würde es sich wirtschaftlich wahrscheinlich auch nicht groß in Deutschland rentieren.

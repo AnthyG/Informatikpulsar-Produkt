@@ -1,0 +1,12 @@
+body {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#jumboheader {
+    background-image: url('/images/mainpic.jpg');
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-size: unset;
+    background-position-x: center;
+}
