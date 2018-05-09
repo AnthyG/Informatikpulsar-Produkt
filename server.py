@@ -143,7 +143,7 @@ class S(BaseHTTPRequestHandler):
 def run(server_class=HTTPServer, handler_class=S, ip="127.0.0.1", port=8000):
     server_address = (ip, port)
     httpd = server_class(server_address, handler_class)
-    print('Starte Server...')
+    print('Starte Server...', ip, port);
     httpd.serve_forever()
 
 if __name__ == "__main__":

@@ -12,6 +12,17 @@ marked.setOptions({
 
 var markedR = new marked.Renderer();
 
+markedR.table = function(header, body) {
+    return '<table class="table">\n' +
+        '<thead class="thead-light">\n' +
+        header +
+        '</thead>\n' +
+        '<tbody>\n' +
+        body +
+        '</tbody>\n' +
+        '</table>\n'
+}
+
 markedR.link = function(href, title, text) {
     var href = href || '',
         title = title || '',
@@ -152,10 +163,19 @@ var pages = {
             }
         },
         content: null
-    }
+    },
+    "?p:quantenpcs": {
+        url: "/pages/quantenpcs.md",
+        events: {
+            onload: function() {
+
+            }
+        },
+        content: null
+    },
 };
 
-var artikel = ["about", "autoautos", "alltagski", "webdesign", "enandde"];
+var artikel = ["about", "autoautos", "alltagski", "webdesign", "enandde", "quantenpcs"];
 pages["?p:"].vars["artikelliste"] = '<div class="center">';
 for (aK in artikel) {
     var aV = artikel[aK]
