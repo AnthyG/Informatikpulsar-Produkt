@@ -7,7 +7,7 @@
 Der Begriff "Quantencomputer" vereint Quantenphysik und Computer.
 Ein Computer der die Gesetzmäßigkeiten der Quantenphysik ausnutzt.
 
-Die kleinste Informationseinheit, das normal Bit, kann man sich wie einen Lichtschalter vorstellen. Es ist entweder Aus oder An, 0 oder 1. Ein Quantenzustand ist aber viel komplexer, weil er gleichzeitig Welle und Teilchen sein kann. Ein Quantumbit kann nicht nur den zustand 0 oder 1 haben sondern auch beides zusammen, weil es Zwischenzustände haben kann. 
+Die kleinste Informationseinheit, das normal Bit, kann man sich wie einen Lichtschalter vorstellen. Es ist entweder Aus oder An, 0 oder 1. Ein Quantenzustand ist aber viel komplexer, weil er gleichzeitig Welle und Teilchen sein kann. Ein Quantumbit kann nicht nur den zustand 0 oder 1 haben sondern auch beides zusammen, weil es Zwischenzustände haben kann.
 Mehr Informationen passen in einen viel kleineren Computer, das macht Quantencomputer so interessant
 
 Das durchsuchen riesiger Datenbanken oder das rechen von komplizierten Rechnungen läuft viel schneller da sich ein Quantencomputer die Arbeit aufteilen kann.

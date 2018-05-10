@@ -49,7 +49,11 @@ markedR.image = function(e, t, n) {
     var r = '<img class="img-fluid border" src="' + e + '" alt="' + n + '"';
     return t && (r += ' title="' + t + '"'),
         r += this.options.xhtml ? "/>" : ">"
-}
+};
+
+markedR.blockquote = function(text) {
+    return "<blockquote class='blockquote'>\n" + text + "</blockquote>\n";
+};
 
 
 
@@ -122,7 +126,38 @@ var pages = {
     "?p:enandde": {
         url: "/pages/enandde.md",
         vars: {
-            "apipoint": '<div><label>Key: <input type="text" value="schluessel" id="enandde_key" /></label><br /><label>Msg: <input type="text" value="nachricht" id="enandde_msg" /></label><br /><label>Verschlüsseln: <input type="checkbox" checked id="enandde_enorde" /></label><br /><button onclick="pages[\'?p:enandde\'].events.submit();">Submit</button><br /><div id="enandde_output"></div></div>'
+            "apipoint": (
+                '<div>' +
+                (
+                    '<div class="form-group">' +
+                    (
+                        '<label for="enandde_key">Key</label>' +
+                        '<input type="text" class="form-control" value="schluessel" placeholder="Key" id="enandde_key" />'
+                    ) +
+                    '</div>'
+                ) +
+                (
+                    '<div class="form-group">' +
+                    (
+                        '<label for="enandde_msg">Message</label>' +
+                        '<input type="text" class="form-control" value="nachricht" placeholder="Message" id="enandde_msg" />'
+                    ) +
+                    '</div>'
+                ) +
+                (
+                    '<div class="form-group">' +
+                    (
+                        '<input type="checkbox" class="form-check-input" checked id="enandde_enorde" />' +
+                        '<label for="enandde_enorde" class="form-check-label">Verschlüsseln</label>'
+                    ) +
+                    '</div>'
+                ) +
+                (
+                    '<button onclick="pages[\'?p:enandde\'].events.submit();" type="submit" class="btn btn-primary">Submit</button>' +
+                    '<br /><div id="enandde_output">'
+                ) +
+                '</div>'
+            )
         },
         events: {
             onload: function() {
@@ -274,10 +309,16 @@ function loadPage(page, hstrypsh) {
     var hstrypsh = hstrypsh == false ? false : true;
     fetchPage(page, function(content) {
         var cc = $('#content');
+        // console.log("content", page, content);
+        // console.log(content.match(/\n\!\-\-\-\!/));
         cc.html(
-            marked(content, {
-                renderer: markedR
-            })
+            marked(
+                content
+                .replace(/\n\!\-\-\-\!/, function(match) {
+                    return '';
+                }), {
+                    renderer: markedR
+                })
             .replace(/\{\{(.+)\}\}/gm, function(match, p1) {
                 var p1 = p1.trim();
                 // console.log("var in page", page, p1);

@@ -143,13 +143,15 @@ class S(BaseHTTPRequestHandler):
 def run(server_class=HTTPServer, handler_class=S, ip="127.0.0.1", port=8000):
     server_address = (ip, port)
     httpd = server_class(server_address, handler_class)
-    print('Starte Server...', ip, port);
+    print('Starte Server...', ip, port)
     httpd.serve_forever()
 
 if __name__ == "__main__":
     from sys import argv
 
-    if len(argv) == 2:
+    print("args", argv)
+
+    if len(argv) == 3:
         run(ip=argv[1],port=int(argv[2]))
     else:
         run()
