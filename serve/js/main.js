@@ -169,7 +169,7 @@ var pages = {
                 var enorde = $('#enandde_enorde').is(':checked') ? "True" : "False";
 
                 var http = new XMLHttpRequest();
-                var url = "/";
+                var url = "/enorde.php";
                 var params = 'key=' + key + '&msg=' + msg + '&enorde=' + enorde;
                 http.open("POST", url, true);
 

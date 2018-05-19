@@ -28,7 +28,7 @@ servepath = "./serve"
 mimetypesS = []
 mimetypesR = []
 
-mtfile = open("mimetypes.txt", "r")
+mtfile = open("./mimetypes.txt", "r")
 mtfile_read = mtfile.readlines()
 mtfile.close()
 
@@ -54,12 +54,20 @@ for err in errorthings:
 
 class S(BaseHTTPRequestHandler):
     def _set_headers(self, content_type):
+        #content_length = 1000
         self.send_response(200)
-        self.send_header('Content-type', content_type + "; charset=utf-8")
+        self.send_header('Content-Type', '' + content_type + '; charset=UTF-8')
+        self.send_header('Content-Encoding', 'identity')
+        #self.send_header('Content-Length', str(content_length) + '')
+        self.send_header('Accept-Ranges', 'none')
+        #self.send_header('Keep-Alive', 'timeout=5, max=100')
+        #self.send_header('Connection', 'Keep-Alive')
+        #self.send_header('Vary', 'Accept-Encoding')
+        self.send_header('Access-Control-Allow-Origin', '*')
         self.end_headers()
 
     def do_GET(self):
-        print("\n\nRequested: ", str(self.path), unquote(str(self.path)))
+        print("\n\nRequested: ", str(self.path), unquote(str(self.path))) # , str(self.headers)
 
         pathnquery = self.path.split("?")
 
