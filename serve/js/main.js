@@ -168,8 +168,11 @@ var pages = {
                 var msg = utoa($('#enandde_msg').val());
                 var enorde = $('#enandde_enorde').is(':checked') ? "True" : "False";
 
+                var date = new Date();
+                var datetime = date.getTime();
+
                 var http = new XMLHttpRequest();
-                var url = "/enorde.php";
+                var url = "/enorde.php?" + datetime;
                 var params = 'key=' + key + '&msg=' + msg + '&enorde=' + enorde;
                 http.open("POST", url, true);
 
