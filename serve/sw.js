@@ -25,7 +25,7 @@ self.__precacheManifest = [
   },
   {
     "url": "css/main.css",
-    "revision": "352e45660c3b8359173f5735a31dd8d8"
+    "revision": "173cd03f912826f6afb4b4885d6995a9"
   },
   {
     "url": "errors/404.html",
@@ -41,7 +41,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "311ed8c5c7e8bae27400b0a485a78efe"
+    "revision": "c335f6c0c54e435efd459c9b3d4e5bae"
   },
   {
     "url": "js/highlight.pack.js",

@@ -10,3 +10,9 @@ body {
     background-size: unset;
     background-position-x: center;
 }
+
+@media (max-width: 768px) {
+    .w-sm-100 {
+        width: 100% !important;
+    }
+}
