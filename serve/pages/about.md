@@ -13,4 +13,4 @@ im Programmieren aneignen. Und keine Angst, wenn du ein Noob bist, es sind alle 
 
 Links zu den Repositories: [GitHub](https://github.com/AnthyG/Informatikpulsar-Produkt) & [GitLab](https://gitlab.com/AnthyG/Informatikpulsar-Produkt)
 
-Und ein Link zum Blog-Artikel, wo Anthony (der Schüler-Lehrer) und Herr Heitz über die gemachten Erfahrungen sprechen: [Neue Oberstufe - Peer Learning – Oder wie ein Schüler ein eigenes Pulsar auf die Beine gestellt hat](www.neue-oberstufe.berlin/peer-learning-oder-wie-ein-schueler-ein-eigenes-pulsar-auf-die-beine-gestellt-hat/)
+Und ein Link zum Blog-Artikel, wo Anthony (der Schüler-Lehrer) und Herr Heitz über die gemachten Erfahrungen sprechen: [Neue Oberstufe - Peer Learning – Oder wie ein Schüler ein eigenes Pulsar auf die Beine gestellt hat](http://www.neue-oberstufe.berlin/peer-learning-oder-wie-ein-schueler-ein-eigenes-pulsar-auf-die-beine-gestellt-hat/)
