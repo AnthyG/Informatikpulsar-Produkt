@@ -10,3 +10,5 @@ technisch nachstellt.
 ... und auch ein paar ordentliche Diskussionen zum Thema KI in der Zukunft führen...
 Wir werden uns mit einer “simpleren” Version des Gehirns beschäftigen, dem neuronalen Netzwerk. Dabei werden wir uns Grundkenntnisse und Fähigkeiten
 im Programmieren aneignen. Und keine Angst, wenn du ein Noob bist, es sind alle willkommen und können mitwirken!
+
+Links zu den Repositories: [GitHub](https://github.com/AnthyG/Informatikpulsar-Produkt) & [GitLab](https://gitlab.com/AnthyG/Informatikpulsar-Produkt)

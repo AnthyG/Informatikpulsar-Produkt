@@ -11,7 +11,7 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.2.0/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
@@ -41,7 +41,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "f7db062767e64ca806a8bc0fdef96a73"
+    "revision": "311ed8c5c7e8bae27400b0a485a78efe"
   },
   {
     "url": "js/highlight.pack.js",
@@ -49,15 +49,11 @@ self.__precacheManifest = [
   },
   {
     "url": "js/main.js",
-    "revision": "63fb447e9f0e9c969f47fa17b285fc11"
-  },
-  {
-    "url": "js/marked.min.js",
-    "revision": "91d0d720e90d2adefc509b11f12ea75c"
+    "revision": "d9def3bb29bfaac5204d152f6eaf447d"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerRoute(/\.(?:png|jpg|jpeg|svg)$/, workbox.strategies.cacheFirst({ cacheName: "images", plugins: [new workbox.expiration.Plugin({"maxEntries":10})] }), 'GET');
-workbox.routing.registerRoute(/\.(?:md)$/, workbox.strategies.cacheFirst({ cacheName: "articles", plugins: [new workbox.expiration.Plugin({"maxEntries":10,"maxAgeSeconds":3600})] }), 'GET');
+workbox.routing.registerRoute(/\.(?:png|jpg|jpeg|svg)$/, workbox.strategies.cacheFirst({ "cacheName":"images", plugins: [new workbox.expiration.Plugin({"maxEntries":10,"purgeOnQuotaError":false})] }), 'GET');
+workbox.routing.registerRoute(/\.(?:md)$/, workbox.strategies.cacheFirst({ "cacheName":"articles", plugins: [new workbox.expiration.Plugin({"maxEntries":10,"maxAgeSeconds":3600,"purgeOnQuotaError":false})] }), 'GET');

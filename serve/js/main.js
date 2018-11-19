@@ -86,7 +86,7 @@ var pages = {
     "?p:": {
         url: "/pages/main.md",
         vars: {
-            "titelbild": '<div class="jumbotron" id="jumboheader" title="http://netdna.webdesignerdepot.com/uploads/2016/04/featured_code.jpg"><h1 class="#display-4 text-monospace">Informatikpulsar</h1></div>',
+            "titelbild": '<div class="jumbotron" id="jumboheader" title="http://netdna.webdesignerdepot.com/uploads/2016/04/featured_code.jpg"><h1 class="#display-4 text-monospace" style="word-wrap: break-word; word-break: break-all;">Informatikpulsar</h1></div>',
             "artikelliste": ''
         },
         events: {
