@@ -1,9 +1,10 @@
 module.exports = {
-    "globDirectory": "serve/",
-    "globPatterns": [
+    globDirectory: "serve/",
+    globPatterns: [
         "**/*.{css,html,ico,js}"
     ],
-    "swDest": "serve\\sw.js",
+    swDest: "serve\\sw.js",
+    //importScripts: ["offlineApp.js"],
 
     // Define runtime caching rules.
     runtimeCaching: [{

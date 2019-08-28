@@ -32,9 +32,9 @@ foreach ($postkeys as $key => $value) {
 //print_r($postvalues);
 
 if (!$errrs[0]) {
-    $key = $postvalues["key"];
-    $msg = $postvalues["msg"];
-    $enorde = $postvalues["enorde"];
+    $key = escapeshellarg($postvalues["key"]);
+    $msg = escapeshellarg($postvalues["msg"]);
+    $enorde = escapeshellarg($postvalues["enorde"]);
 
     $command = "python3 oskarscryptormod.py $key $msg $enorde";
 
